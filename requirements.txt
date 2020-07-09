@@ -97,7 +97,6 @@ traitlets==4.3.3
 udacity==1.1.1
 udacity-pa==0.2.9
 urllib3==1.25.8
-values==0.0.0
 virtualenv==20.0.26
 wcwidth==0.1.8
 webencodings==0.5.1
