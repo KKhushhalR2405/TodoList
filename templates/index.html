@@ -11,13 +11,13 @@
     <h4 style="text-align: center">There are no tasks. Create one below!</h4>
     {% else %}
     <table align="center" style="border-collapse: collapse; width: 50%; border: 1px solid black;">
-        <tr align="center">
+        <tr align="center" class="thRow">
             <th>Task</th>
             <th>Added</th>
             <th>Actions</th>
         </tr>
         {% for task in tasks %}
-            <tr align="center">
+            <tr align="center" class="tdRow">
                 <td>{{ task.content }}</td>
                 <td>{{ task.date_created.date() }}</td>
                 <td>
