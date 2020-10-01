@@ -9,4 +9,9 @@ Webapp Link : Check [here](https://flaskflasktodo.herokuapp.com/)
 ```
 git clone https://github.com/KKhushhalR2405/TodoList.git
 ```
- ## To 
+ ## To contribute to the [issue](https://github.com/KKhushhalR2405/TodoList/issues/2)
+ 
+ 1) Fork the repo
+ 2) Clone
+ 3) Commit changes
+ 4) Do a Pull request
