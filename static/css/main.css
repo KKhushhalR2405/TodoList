@@ -1,7 +1,7 @@
 body, html {
     margin: 0;
     font-family: Arial;
-    
+
 }
 
 .content {
@@ -13,10 +13,17 @@ table, td, th {
     border: 1px solid #aaa;
 }
 
+.thRow {
+  background-color: chocolate;
+}
 
+.tdRow {
+  background-color: bisque;
+}
 
 th {
     height: 30px;
+    padding: 5px;
 }
 
 td {
