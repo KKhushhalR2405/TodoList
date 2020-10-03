@@ -5,6 +5,13 @@
 {% endblock %}
 
 {% block body %}
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+
+<!--Import Google Icon Font-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 <div class="content">
     <h1 style="text-align: center">Task Master</h1>
     {% if tasks|length < 1 %}
@@ -17,26 +24,33 @@
             <th>Actions</th>
         </tr>
         {% for task in tasks %}
-            <tr align="center" class="tdRow">
-                <td>{{ task.content }}</td>
-                <td>{{ task.date_created.date() }}</td>
-                <td>
-                    <a href="/delete/{{task.id}}">Delete</a>
-                    <br>
-                    <a href="/update/{{task.id}}">Update</a>
-                </td>
-            </tr>
+        <tr align="center" class="tdRow">
+            <td>{{ task.content }}</td>
+            <td>{{ task.date_created.date() }}</td>
+            <td>
+                <a href="/delete/{{task.id}}">Delete</a>
+                <br>
+                <a href="/update/{{task.id}}">Update</a>
+            </td>
+        </tr>
         {% endfor %}
     </table>
     {% endif %}
     <br>
     <br>
 
-    <div class="form" align="center">
-        <form action="/" method="POST">
+
+    <form action="/" class="white" method="POST">
+        <div class="input-field">
+            <label htmlFor="Enter a task">Task</label>
             <input type="text" name="content" id="content">
-            <input type="submit" value="Add Task">
-        </form>
-    </div>
+        </div>
+        <div class="input-field">
+            <button type="submit" class="btn pink lighten-1 z-depth-0">Login</button>
+        </div>
+    </form>
+
 </div>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 {% endblock %}
