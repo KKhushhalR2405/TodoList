@@ -14,11 +14,11 @@ table, td, th {
 }
 
 .thRow {
-  background-color: rgba(210, 105, 30, 0.753);
+  background-color: lightcoral;
 }
 
 .tdRow {
-  background-color: #cebe33;
+  background-color: saddlebrown;
 }
 
 th {
