@@ -14,4 +14,4 @@ git clone https://github.com/KKhushhalR2405/TodoList.git
  1) Fork the repo
  2) Clone
  3) Commit changes
- 4) Do a Pull request
+ 4) Make a Pull request
